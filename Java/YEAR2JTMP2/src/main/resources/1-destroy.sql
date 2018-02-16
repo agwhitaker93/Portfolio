@@ -1,1 +1,0 @@
-DROP TABLE IF EXISTS `teaches`, `registered`, `student`, `staff`, `module`;

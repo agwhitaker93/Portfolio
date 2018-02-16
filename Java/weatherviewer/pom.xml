@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>eeu211</groupId>
-    <artifactId>YEAR2-JT-MP3</artifactId>
+    <artifactId>weather-viewer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
