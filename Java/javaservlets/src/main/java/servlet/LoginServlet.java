@@ -14,15 +14,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *
  * @author FleaNovus
  */
 @WebServlet(name = "LoginServlet", urlPatterns =
-{
-    "/LoginServlet"
-})
-public class LoginServlet extends HttpServlet
-{
+        {
+                "/LoginServlet"
+        })
+public class LoginServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,26 +31,24 @@ public class LoginServlet extends HttpServlet
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException      if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-	    throws ServletException, IOException
-    {
-	response.setContentType("text/html;charset=UTF-8");
-	try (PrintWriter out = response.getWriter())
-	{
-	    /* TODO output your page here. You may use following sample code. */
-	    out.println("<!DOCTYPE html>");
-	    out.println("<html>");
-	    out.println("<head>");
-	    out.println("<title>Servlet LoginServlet</title>");
-	    out.println("</head>");
-	    out.println("<body>");
-	    out.println("<h1>Servlet LoginServlet at " + request.getContextPath() + "</h1>");
-	    out.println("</body>");
-	    out.println("</html>");
-	}
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+
+        PrintWriter out = response.getWriter();
+        /* TODO output your page here. You may use following sample code. */
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>Servlet LoginServlet</title>");
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<h1>Servlet LoginServlet at " + request.getContextPath() + "</h1>");
+        out.println("</body>");
+        out.println("</html>");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -63,17 +59,17 @@ public class LoginServlet extends HttpServlet
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-	    throws ServletException, IOException
-    {
-	processRequest(request, response);
+            throws ServletException, IOException {
+        processRequest(request, response);
     }
 
     /**
      * Handles the HTTP <code>POST</code> method.
-     *
+     * <p>
      * Takes a username and password from the web page and echoes a personalized
      * login page if both are provided.
      * Otherwise, the user is asked to enter valid credentials before submitting
+     *
      * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
@@ -81,33 +77,29 @@ public class LoginServlet extends HttpServlet
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-	    throws ServletException, IOException
-    {
-	PrintWriter out = response.getWriter();
-	String username = request.getParameter("username");
-	String pass = request.getParameter("pass");
+            throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        String username = request.getParameter("username");
+        String pass = request.getParameter("pass");
 
-	out.println("<html>");
-	out.println("<head>");
-	
-	if (!username.equals("") && !pass.equals(""))
-	{
-	    out.println("<title>Logging in as " + username + "</title>");
-	    out.println("</head>");
-	    out.println("<body>");
-	    out.println("Welcome, user " + username
-		    + ". You are now logged into the system.");
-	}
-	else
-	{
-	    out.println("<title>Invalid</title>");
-	    out.println("</head>");
-	    out.println("<body>");
-	    out.println("Please enter valid credentials before submitting");
-	}
+        out.println("<html>");
+        out.println("<head>");
 
-	out.println("</body>");
-	out.close();
+        if (!username.equals("") && !pass.equals("")) {
+            out.println("<title>Logging in as " + username + "</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("Welcome, user " + username
+                    + ". You are now logged into the system.");
+        } else {
+            out.println("<title>Invalid</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("Please enter valid credentials before submitting");
+        }
+
+        out.println("</body>");
+        out.close();
     }
 
     /**
@@ -116,9 +108,8 @@ public class LoginServlet extends HttpServlet
      * @return a String containing servlet description
      */
     @Override
-    public String getServletInfo()
-    {
-	return "Short description";
+    public String getServletInfo() {
+        return "Short description";
     }// </editor-fold>
 
 }

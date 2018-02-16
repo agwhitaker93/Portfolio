@@ -15,15 +15,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *
  * @author FleaNovus
  */
 @WebServlet(urlPatterns =
-{
-    "/HelloWorldServlet"
-})
-public class HelloWorldServlet extends HttpServlet
-{
+        {
+                "/HelloWorldServlet"
+        })
+public class HelloWorldServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,30 +32,29 @@ public class HelloWorldServlet extends HttpServlet
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException      if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-	    throws ServletException, IOException
-    {
-	response.setContentType("text/html;charset=UTF-8");
-	try (PrintWriter out = response.getWriter())
-	{
-	    /* TODO output your page here. You may use following sample code. */
-	    out.println("<!DOCTYPE html>");
-	    out.println("<html>");
-	    out.println("<head>");
-	    out.println("<title>Servlet HelloWorldServlet</title>");	    
-	    out.println("</head>");
-	    out.println("<body>");
-	    out.println("<h1>Servlet HelloWorldServlet at " + request.getContextPath() + "</h1>");
-	    out.println("</body>");
-	    out.println("</html>");
-	}
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+
+        PrintWriter out = response.getWriter();
+        /* TODO output your page here. You may use following sample code. */
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>Servlet HelloWorldServlet</title>");
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<h1>Servlet HelloWorldServlet at " + request.getContextPath() + "</h1>");
+        out.println("</body>");
+        out.println("</html>");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+
     /**
      * Handles the HTTP <code>GET</code> method.
-     *
+     * <p>
      * Redirects to another web page
+     *
      * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
@@ -65,10 +62,9 @@ public class HelloWorldServlet extends HttpServlet
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-	    throws ServletException, IOException
-    {
+            throws ServletException, IOException {
 //	processRequest(request, response);
-	response.sendRedirect("index.html");
+        response.sendRedirect("index.html");
     }
 
     /**
@@ -81,9 +77,8 @@ public class HelloWorldServlet extends HttpServlet
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-	    throws ServletException, IOException
-    {
-	processRequest(request, response);
+            throws ServletException, IOException {
+        processRequest(request, response);
     }
 
     /**
@@ -92,9 +87,8 @@ public class HelloWorldServlet extends HttpServlet
      * @return a String containing servlet description
      */
     @Override
-    public String getServletInfo()
-    {
-	return "Short description";
+    public String getServletInfo() {
+        return "Short description";
     }// </editor-fold>
 
 }

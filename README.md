@@ -1,2 +1,3 @@
 # Portfolio
-A portfolio of programmes
+
+A portfolio of programmes, mostly completed during uni.
