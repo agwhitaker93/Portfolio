@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Managing Form</title>
+        <meta name="description" content="A form of sorts"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <h1>XYZ Computers: Order Form</h1>
+        <form action="OrderFormServlet" method="post">
+            <div class="table">
+                <div class="field">
+                    <label>Description:</label>
+                    <input type="text" name="Description"/>
+                </div>
+                <div class="field">
+                    <label>Code:</label>
+                    <input type="text" name="Code"/>
+                </div>
+                <div class="field">
+                    <label>Quantity:</label>
+                    <input type="number" name="Quantity" min="1"/>
+                </div>
+                
+                <h3>Delivery:</h3>
+                <input type="radio" name="Delivery" value="SAME_DAY"/>Same Day<br/>
+                <input type="radio" name="Delivery" value="EXPRESS"/>Express<br/>
+                <input type="radio" name="Delivery" value="STANDARD"/>Standard<br/>
+                <div class="field">
+                    <label>Customer_ID:</label>
+                    <input type="password" name="CustomerID"/>
+                </div></div>
+            <input class="button" type="submit" value="Place Order"/>
+            <input class="button" type="button" value="Cancel"/>
+        </form>
+    </body>
+</html>

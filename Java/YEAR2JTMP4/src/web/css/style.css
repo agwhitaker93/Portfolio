@@ -1,0 +1,15 @@
+.table {
+    display: table;
+}
+
+.field {
+  display: table-row;
+}
+
+label, input {
+  display: table-cell;
+}
+
+input {
+    margin: 4px 10px;
+}

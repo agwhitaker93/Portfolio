@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <h1>Login Form</h1>
+        <p>Please enter your username and password</p>
+        <form class="table" action="LoginServlet" method="post">
+            <div class="field">
+                <label>Username:</label>
+                <input type="text" name="username"/>
+            </div>
+            <br/>
+            <div class="field">
+                <label>Password:</label>
+                <input type="password" name="pass"/>
+            </div>
+            <br/>
+            <div class="field"><input type="submit"/></div>
+        </form>
+    </body>
+</html>

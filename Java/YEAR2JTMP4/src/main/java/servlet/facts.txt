@@ -1,0 +1,10 @@
+Charles Babbage, an English mechanical engineer and polymath, originated the concept of a programmable computer.
+The first domain name ever registered was Symbolics.com.
+The number of internet users in 2016 is estimated to be over 3 Billion"
+The MP944 digital processor used for the F-14 Tomcat aircraft of the US Navy qualifies as the first microprocessor.
+The fastest clock speed achieved on a Consumer CPU is 8.79GHz using a AMD FX 8350
+Moores law; the observation of doubling of the number of transistors within an integrated circuit every 2 years, has slowed to 30months
+Windows 10 is now active on over 200 million devices
+The first computer virus: "Brain" would infect the boot sector of FAT formatted floppy disks, originally intended to target copyright infringement
+Booting up is a term coined by early computing engineers who described the lengthy process loading code that loads code that loads code as pulling themselves up by their bootstraps
+Todays Linux contains less than 2% of the original code written by Linus Torvalds
