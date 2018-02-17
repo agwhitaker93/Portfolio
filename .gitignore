@@ -1,6 +1,7 @@
-.idea
+.idea/
 *.iml
-target
+target/
+build/
 
 
 ## Ignore Visual Studio temporary files, build results, and
