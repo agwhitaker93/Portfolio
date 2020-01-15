@@ -1,17 +1,7 @@
-/*
-	Author:		Andrew Whitaker
-	Title:		Die
-	Created:	05/03/2015
-	Version:	1.0
-*/
+package craps;
 
 import java.util.*;
 
-/**
- * 
- * @author FleaNovus
- *
- */
 public class Die
 {
 	private int faceValue;
@@ -56,7 +46,7 @@ public class Die
 	/**
 	 * Adds the face values of two given die
 	 * @param die2 the second die object given as an object
-	 * @param dieCast the second die object cast to type Die
+	 * @param dieCast the second die object cast to type main.java.craps.Die
 	 * @return Summed value of the die
 	 */
 	public int dieAdd(Object die2)
@@ -74,7 +64,7 @@ public class Die
 	
 	@Override
 	public String toString() {
-		return "Die [faceValue=" + faceValue + ", sides=" + sides
+		return "main.java.craps.Die [faceValue=" + faceValue + ", sides=" + sides
 				+ "]";
 	}
 }

@@ -1,6 +1,6 @@
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 /*
  * Author:		Andrew
@@ -15,7 +15,7 @@ public class MTGViewer {
     public static void main(String[] args) {
         frame = new MTGFrame();
 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         EventQueue.invokeLater(new Runnable() {
             public void run() {

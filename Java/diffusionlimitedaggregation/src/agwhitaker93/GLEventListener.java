@@ -1,3 +1,5 @@
+package agwhitaker93;
+
 import java.util.Random;
 
 import com.jogamp.opengl.GL2;

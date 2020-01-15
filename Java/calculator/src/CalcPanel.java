@@ -140,6 +140,9 @@ public class CalcPanel extends JPanel
 		@Override
 		public void actionPerformed(ActionEvent e)
 		{
+			buttonValue=e.getActionCommand();
+			setCommand(Calculator.ButtonType.Number, e.getActionCommand(), buttonValue);
+
 			switch (e.getActionCommand())
 			{
 			case "0":

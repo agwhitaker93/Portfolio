@@ -1,23 +1,9 @@
+package craps;
+
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-/*
-	Author:		Andrew Whitaker
-	Title:		DiceFacePanel
-	Created:	03/11/2015
-	Version:	1.0
-*/
-
-// Paint the Dice here!
-
-/**
- * 
- * @author FleaNovus
- *
- */
 public class DiceFacePanel extends JPanel
 {
 	JLabel scoreTracker;

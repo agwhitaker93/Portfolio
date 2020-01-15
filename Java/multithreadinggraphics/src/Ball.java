@@ -61,8 +61,8 @@ public class Ball implements Runnable {
     public void run() {
         while (!Thread.interrupted()) //While the thread has not been interrupted
         {
-            if (Thread.interrupted()) //if it is interrupted, pause the animation
-                paused = true;
+            //if it is interrupted, pause the animation
+            paused = Thread.interrupted();
 
             if (!paused) //if it is not paused
             {

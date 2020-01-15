@@ -1,17 +1,5 @@
-/*
-	Author:		Andrew Whitaker
-	Title:		CrapsGame
-	Created:	03/11/2015
-	Version:	1.0
-*/
+package craps;
 
-// Game Logic goes here!
-
-/**
- * 
- * @author FleaNovus
- *
- */
 public class CrapsGame
 {
 	public static Die dieRoller1;
@@ -22,7 +10,7 @@ public class CrapsGame
 	private int[] finishValues = {7, 11, 2, 3, 12};
 	
 	/**
-	 * No-arg constructor sets variable firstRoll to 0 and instantiates 2 Die objects
+	 * No-arg constructor sets variable firstRoll to 0 and instantiates 2 main.java.craps.Die objects
 	 */
 	public CrapsGame()
 	{
@@ -32,7 +20,7 @@ public class CrapsGame
 	}
 	
 	/**
-	 * Rolls both die for the first time. Makes use of the dieAdd method from the Die class.
+	 * Rolls both die for the first time. Makes use of the dieAdd method from the main.java.craps.Die class.
 	 * @return The sum, currently 0, and point, which is set in this method.
 	 */
 	public String doFirstRoll()

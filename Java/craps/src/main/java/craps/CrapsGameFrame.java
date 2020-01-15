@@ -1,23 +1,9 @@
+package craps;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-//import DiceFacePanel.RollButtonListener;
-
-/*
-	Author:		Andrew Whitaker
-	Title:		CrapsGameFrame
-	Created:	03/11/2015
-	Version:	1.0
-*/
-
-// UI elements for the game go here!
-
-/**
- * 
- * @author FleaNovus
- *
- */
 public class CrapsGameFrame extends JFrame
 {
 	JPanel scorePanel;
@@ -31,7 +17,7 @@ public class CrapsGameFrame extends JFrame
 	/**
 	 * Constructor for the game frame. Instantiates a game instance,
 	 * calls createComponents and sets the frame size
-	 * @param game object fed in from CrapsGameViewer
+	 * @param game object fed in from main.java.craps.CrapsGameViewer
 	 */
 	public CrapsGameFrame(CrapsGame game)
 	{

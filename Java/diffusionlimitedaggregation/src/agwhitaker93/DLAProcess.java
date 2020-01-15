@@ -1,3 +1,5 @@
+package agwhitaker93;
+
 import java.util.Random;
 
 public class DLAProcess {

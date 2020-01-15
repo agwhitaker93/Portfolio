@@ -1,22 +1,10 @@
+package craps;
+
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
 
-/*
-	Author:		Andrew Whitaker
-	Title:		Dice
-	Created:	03/11/2015
-	Version:	1.0
-*/
-
-// This is where the Dice are created!
-
-/**
- * 
- * @author FleaNovus
- *
- */
 public class Dice
 {
 	
@@ -29,7 +17,7 @@ public class Dice
 	int dieFaceValue;
 	
 	/**
-	 * Dice constructor
+	 * main.java.craps.Dice constructor
 	 * @param xCoord base x coordinate for dieface
 	 * @param yCoord base y coordinate for dieface
 	 * @param width width of dieface

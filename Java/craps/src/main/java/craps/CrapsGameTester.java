@@ -1,11 +1,4 @@
-/*
-	Author:		Andrew Whitaker
-	Title:		CrapsGameTester
-	Created:	03/11/2015
-	Version:	1.0
-*/
-
-// Game Logic Tester goes here!
+package craps;
 
 public class CrapsGameTester
 {
